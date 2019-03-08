@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    /* font-family: Arial Rounded MT, bold; */
+}
+body{
+    font-family: Arial Rounded MT ,bold;
+}
+nav{
+    background-color: #f4b443;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.point{
+    font-family: "Sui Generis", bold;
+    color: #005eb9;
+}
+ul a{
+    color: #000;
+}
+nav li{
+    font-size: 1.5em;
+}
+nav p{
+    font-size: 1.7em;
+    -webkit-text-stroke: 1px #000;
+    color: #005eb9;
+    margin-left: -70%;
+}
+.navegacao{
+    display: flex;
+    align-items: center;
+}
+.redes_sociais{
+    display: flex;
+    align-items: center;
+}
+.redes_sociais img{
+    margin-left: 5px;
+    height: 30px;
+}
+.reuniao{
+    width: 100%;
+}
+.vantagens{
+    width: 30%;
+}
+.cf1{
+    width: 15%;
+}
+.cf2 img{
+    width: 15%;
+}
