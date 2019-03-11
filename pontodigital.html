@@ -5,61 +5,245 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ponto Digital</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/script.js">
+    <link rel="shortcut icon" href="imagens/logo2.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 </head>
 <body>
     <header>
         <nav>
-            <a class="logo1" href="#"><img src="imagens/logo2.png" alt="logo"></a>
-            <div class="navegacao">
-                <div class="point">
-                   <a href="#"><p>Ponto Digital</p></a> 
-                </div>
-                <ul>
-                    <li class="func"><a href="#">Funcionalidades</a></li>
-                    <li class="planos"><a href="#">Planos</a></li>
-                    <li class="quem"><a href="#">Quem Somos</a></li>
-                    <li>Tel:3675-5913</li>
-                </ul>
+            <div class="menu_icon">
+                <i class="fas fa-bars"></i>
             </div>
-            <div class="redes_sociais">
-                <a class="rs" href="#"><img src="imagens/face logo.png" alt="face"></a>
-                <a class="rs" href="#"><img src="imagens/Instagram_icon.png" alt="insta"></a>
-                <a class="rs" href="#"><img src="imagens/twitter logo.png" alt="tt"></a>
+            <a class="logo" href="#"><img src="imagens/logo2.png" alt="logo"></a>
+            <div class="menu">
+                <ul>
+                    <li><a href="#funcionalidades" class="scrollLink">Funcionalidades</a></li>
+                    <!-- <li><a href="#como_funciona" class="scrollLink">Como Funciona</a></li> -->
+                    <li><a href="#planos" class="scrollLink">Planos</a></li>
+                    <li><a href="#quem_somos" class="scrollLink">Quem Somos</a></li>
+                    <!-- <li>Tel:3675-5913</li> -->
+                    <li><a href="#fale_conosco" class="scrollLink">Contato</a></li>
+                </ul>
             </div>
         </nav>
     </header>
 
     <section class="banner">
-        <img class="reuniao" src="imagens/imagem banner.png" alt="imagembanner">
-        <img class="logo2" src="imagens/logo2.png" alt="logo2">
-        <h2>Ponto Digital</h2>
-        <p>você, no controle</p>
+        <img class="reuniao" src="imagens/reuuniao3.png" alt="imagembanner">
     </section>
 
-    <section class="funcionalidades">
+    <section class="funcionalidades" id="funcionalidades">
         <h2>Funcionalidades</h2>
-        <img src="imagens/Camada 3.png" alt="homi">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati quasi iste nihil, placeat laborum explicabo debitis perferendis nobis earum quisquam ipsa tempore numquam quae exercitationem veniam ad labore. Quibusdam, voluptates!</p>
-        <img class="vantagens" src="imagens/vantagens 2.png" alt="vantagens 2">
-        <img class="vantagens" src="imagens/vantagens.png" alt="vantagens">
-    </section>
-
-    <section class="como_funciona">
-        <h2>Como Funciona</h2>
-        <img class="cf1" src="imagens/Best-Free-Software.png" alt="1">
-        <p>Use</p>
-        <div class="cf2">
-            <img src="imagens/software-agility.png" alt="2">
-            <p>Analise</p>
-            <img src="imagens/hero-image-dd1734ec169dc6ac060669e60bc4997f27d04e4ff5700bcdbefad8d8f49ddc37.png" alt="3">
-            <p>Decole!</p>
+        <div class="flex_func">
+            <!-- <img class="homi" src="imagens/Camada 3.png" alt="homi"> -->
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati quasi iste nihil, placeat laborum explicabo debitis perfere Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum suscipit ipsam accusantium quibusdam tempore, deleniti facilis molestias animi velit voluptate ut laudantium assumenda minus adipisci, iusto temporibus nihil quaerat eos.</p>
+            <img class="vantagens" src="imagens/vantagensT.png" alt="vantagens">
         </div>
     </section>
 
-    <section class="planos">
-        <h2>Planos</h2>
-        
+    <section class="como_funciona" id="como_funciona">
+        <h2>Como Funciona</h2>
+        <div class="flex_como">
+            <i class="fas fa-laptop"></i>
+            <i class="fas fa-mobile-alt"></i>
+            <i class="fas fa-space-shuttle"></i>
+        </div>
     </section>
 
+    <section class="planos" id="planos">
+        <h2>Planos</h2>
+        <div class="tabela_preços">
+            <div class="col">
+
+                <div class="table">
+                    <h3>Free</h3>
+                    <div class="price">
+                        R$00,00
+                        <span>Por mês</span>
+                    </div>
+
+                    <ul>
+                        <li>1 Funcionário</li>
+                    </ul>
+                    <a href="#">Compre Agora</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="table">
+                        <h3>Low</h3>
+                        <div class="price">
+                            R$29,90
+                            <span>Por mês</span>
+                        </div>
+    
+                        <ul>
+                            <li>5 Funcionários</li>
+                        </ul>
+                        <a href="#">Compre Agora</a>
+                    </div>
+            </div>
+            <div class="col">
+                <div class="table">
+                        <h3>Medium</h3>
+
+                        <div class="pop">Popular</div>
+
+                        <div class="price">
+                            R$149,90
+                            <span>Por mês</span>
+                        </div>
+    
+                        <ul>
+                            <li>50 Funcionários</li>
+                        </ul>
+                        <a href="#">Compre Agora</a>
+                    </div>
+            </div>
+            <div class="col">
+                <div class="table">
+                        <h3>High</h3>
+                        <div class="price">
+                            R$299,90
+                            <span>Por mês</span>
+                        </div>
+    
+                        <ul>
+                            <li>300 Funcionários</li>
+                        </ul>
+                        <a href="#">Compre Agora</a>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <button id="topBtn"><i class="fas fa-arrow-up"></i></button>
+
+    <section class="quem_somos" id="quem_somos">
+        <h2>Quem somos</h2>
+        <div class="quem_somos_content">
+            <img src="imagens/carlos.png" alt="carlos">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo reprehenderit nemo adipisci, facilis animi neque, quod cupiditate veritatis ipsam cumque deserunt deleniti velit amet non commodi, ad soluta? Magnam, autem? </p>
+            <img src="imagens/cesar.png" alt="cesar">
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="inner">
+            <h2>Avaliações</h2>
+            <div class="border"></div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="testimonial">
+                        <img src="imagens/test1.png" alt="pessoa">
+                        <div class="name">Roberto</div>
+                        <div class="stars">
+                            <i class="far fa fa-star"></i>
+                            <i class="far fa fa-star"></i>
+                            <i class="far fa fa-star"></i>
+                            <i class="far fa fa-star"></i>
+                            <i class="far fa fa-star"></i>
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores aspernatur consectetur repellat nesciunt praesentium. Amet magnam nisi veritatis dolore sapiente, nam sunt. Sit, similique. Minima quam atque asperiores. Consequuntur, eum!</p>
+                    </div>
+                </div>
+                <div class="col">
+                        <div class="testimonial">
+                            <img src="imagens/test2.png" alt="pessoa">
+                            <div class="name">Thiago</div>
+                            <div class="stars">
+                                <i class="far fa fa-star"></i>
+                                <i class="far fa fa-star"></i>
+                                <i class="far fa fa-star"></i>
+                                <i class="far fa fa-star"></i>
+                                <i class="far fa fa-star"></i>
+                            </div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores aspernatur consectetur repellat nesciunt praesentium. Amet magnam nisi veritatis dolore sapiente, nam sunt. Sit, similique. Minima quam atque asperiores. Consequuntur, eum!</p>
+                        </div>
+                </div>
+                <div class="col">
+                        <div class="testimonial">
+                            <img src="imagens/test1.png" alt="pessoa">
+                            <div class="name">Betinho</div>
+                            <div class="stars">
+                                <i class="far fa fa-star"></i>
+                                <i class="far fa fa-star"></i>
+                                <i class="far fa fa-star"></i>
+                                <i class="far fa fa-star"></i>
+                                <i class="far fa fa-star"></i>
+                            </div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores aspernatur consectetur repellat nesciunt praesentium. Amet magnam nisi veritatis dolore sapiente, nam sunt. Sit, similique. Minima quam atque asperiores. Consequuntur, eum!</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact_form" id="fale_conosco">
+        <h2>Fale Conosco!</h2>
+        <div class="contact_form_content">
+            <div class="txtb">
+                <label>Nome Completo :</label>
+                <input type="text" name="" value="" placeholder="Digite seu nome">
+            </div>
+            <div class="txtb">
+                <label>E-mail :</label>
+                <input type="email" name="" value="" placeholder="Digite seu e-mail">
+            </div>
+            <div class="txtb">
+                <label> Mensagem :</label>
+                <textarea></textarea>
+            </div>
+            <a class="formBtn">Enviar</a>
+        </div>
+    </section>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0656932253614!2d-46.65298398507052!3d-23.56608398468064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.+Paulista+-+Bela+Vista%2C+S%C3%A3o+Paulo+-+SP!5e0!3m2!1spt-BR!2sbr!4v1552311784381" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <section class="footer">
+        <div class="footer_social_icons">
+            <ul>
+                <li><a href="#" target="blank"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#" target="blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" target="blank"><i class="fab fa-twitter-square"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        var $doc = $('html, body');
+        $('.scrollLink').click(function() {
+            $doc.animate({
+                scrollTop: $( $.attr(this, 'href') ).offset().top
+            }, 1000);
+            return false;
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+
+        $(window).scroll(function(){
+        if($(this).scrollTop() > 40){
+            $('#topBtn').fadeIn();
+        } else{
+            $('#topBtn').fadeOut();
+        }
+        });
+
+        $("#topBtn").click(function(){
+        $('html ,body').animate({scrollTop : 0},800);
+        });
+        });
+
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(".menu_icon").on("click", function(){
+                $("nav ul").toggleClass("showing");
+            });
+        });
+    </script>
 </body>
 </html>
