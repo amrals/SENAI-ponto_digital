@@ -6,14 +6,17 @@
     /* font-family: Arial Rounded MT, bold; */
     box-sizing: border-box;
 }
+p{
+    font-family: 'Montserrat', sans-serif;
+}
 h2{
     font-family: "Sui Generis", bold;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 40px;
     padding-bottom: 30px;
 }
 body{
-    font-family: Arial Rounded MT ,bold;
+    font-family: 'Montserrat', sans-serif;
 }
 .header{
     width: 100%;
@@ -67,50 +70,76 @@ nav ul li a:hover{
     color: #005eb9;
 }
 .banner{
-    padding-top: 4.5%;
+    width: 100%;
+    background-image: url("../imagens/reuuniao8.png");
+    background-repeat: no-repeat;
+    background-color: #005eb9;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 4.7%;
+    height: 100vh;
 }
 .reuniao{
     width: 100%;
 }
-.vantagens{
-    width: 30%;
+.h2f{
+    text-align: left;
 }
-.funcionalidades{
+.h2f2{
+    text-align: right;
+}
+.titulos{
+    display: flex;
+    justify-content: space-evenly;
     padding-top: 5%;
 }
-.flex_func{
-    /* padding-top: 5%; */
-    margin: auto;
+.divona{
     display: flex;
-    justify-content: center;
+}
+
+.funcionalidades{
+    padding-left: 10%;
+    width: 100%;
+}
+.flex_func{
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 15%;
+}
+.como_funciona{
+    padding-right: 10%;
 }
 .funcionalidades p{
-    max-width: 600px;
+    max-width: 500px;
+    margin-top: -10%;
 }
 .funcionalidades img{
     height: 100%;
     width: 50%;
-    /* margin-top: -110px; */
 }
-/* .funcionalidades h2{
-    padding-top: 10px;
-    padding-bottom: 30px;
+.ícones{
+    width: 50%;
+    height: auto;
 }
-.como_funciona h2{
-    padding-top: 5%;
-    padding-bottom: 5%;
-} */
-.flex_como{
-    display: inline-flex;
-    flex-wrap: wrap;
-}
-.flex_como i{
-    color: #005eb9;
-    font-size: 80px;
-    padding: 5px 50px;
+.ícones ul{
+    margin: 0px;
+    padding: 0px;
     text-align: center;
+    margin-top: 20px;
+}
+.ícones ul li{
+    display: inline-block;
+    margin: 10px 10px;
+    font-size: 90px;
+    color: #005eb9;
+    padding: 0 50px 0 50px;
+}
+.ícones ul li p{
+    margin-top: 30px;
+    font-size: 40px;
+    color: #000;
 }
 #planos{
     padding-top: 5%;
@@ -180,7 +209,7 @@ nav ul li a:hover{
     top: 16px;
     right: -34px;
 }
-#topBtn{
+.topBtn{
     position: fixed;
     bottom: 40px;
     right: 40px;
@@ -305,14 +334,19 @@ nav ul li a:hover{
     display: inline-block;
     background: #f4b443;
     padding: 14px 0;
-    color: #005eb9;
+    color: #000;
     text-transform: uppercase;
     cursor: pointer;
     margin-top: 8px;
     width: 100%;
 }
+.formBtn:hover{
+    background: #fff;
+    color: #005eb9;
+}
 iframe{
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: -10px;
 }
 .footer{
     width: 100%;
@@ -338,6 +372,7 @@ iframe{
     margin: 0px 10px;
     border-radius: 100%;
     background: #f4b443;
+    cursor: pointer;
 }
 .footer_social_icons ul li a{
     color: #000;
@@ -346,6 +381,25 @@ iframe{
 .footer_social_icons ul li a i{
     line-height: 50px;
 }
+.footer_social_icons ul li a:hover{
+    color: #005eb9;
+    font-size: 25px;
+}
+.footer_social_icons ul li:hover{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px;
+    border-radius: 100%;
+    background: #fff;
+}
+@media(max-width:1127px){
+    .funcionalidades p{
+        max-width: 500px;
+        margin-top: -10%;
+    }
+}
+
 
 @media(max-width:1000px){
     .logo{

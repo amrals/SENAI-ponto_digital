@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="imagens/logo2.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -19,7 +20,7 @@
             <a class="logo" href="#"><img src="imagens/logo2.png" alt="logo"></a>
             <div class="menu">
                 <ul>
-                    <li><a href="#funcionalidades" class="scrollLink">Funcionalidades</a></li>
+                    <li><a href="#titulos" class="scrollLink">Funcionalidades</a></li>
                     <!-- <li><a href="#como_funciona" class="scrollLink">Como Funciona</a></li> -->
                     <li><a href="#planos" class="scrollLink">Planos</a></li>
                     <li><a href="#quem_somos" class="scrollLink">Quem Somos</a></li>
@@ -31,25 +32,33 @@
     </header>
 
     <section class="banner">
-        <img class="reuniao" src="imagens/reuuniao3.png" alt="imagembanner">
+        <!-- <img class="reuniao" src="imagens/reuuniao8.png" alt="imagembanner"> -->
+        <!-- <img src="imagens/logo2.png" alt="logo2"> -->
     </section>
-
-    <section class="funcionalidades" id="funcionalidades">
-        <h2>Funcionalidades</h2>
-        <div class="flex_func">
-            <!-- <img class="homi" src="imagens/Camada 3.png" alt="homi"> -->
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati quasi iste nihil, placeat laborum explicabo debitis perfere Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum suscipit ipsam accusantium quibusdam tempore, deleniti facilis molestias animi velit voluptate ut laudantium assumenda minus adipisci, iusto temporibus nihil quaerat eos.</p>
-            <img class="vantagens" src="imagens/vantagensT.png" alt="vantagens">
-        </div>
-    </section>
-
-    <section class="como_funciona" id="como_funciona">
-        <h2>Como Funciona</h2>
-        <div class="flex_como">
-            <i class="fas fa-laptop"></i>
-            <i class="fas fa-mobile-alt"></i>
-            <i class="fas fa-space-shuttle"></i>
-        </div>
+    <div class="titulos" id="titulos">
+        <h2 class="h2f">Funcionalidades</h2>
+        <h2 class="h2f2">Como Funciona</h2>
+    </div>
+    <section class="divona" id="divona">
+        
+        <section class="funcionalidades" id="funcionalidades">
+            <div class="flex_func">
+                <!-- <img class="homi" src="imagens/Camada 3.png" alt="homi"> -->
+                <img class="vantagens" src="imagens/garotos.png" alt="vantagens">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur a tempore eum reiciendis deleniti nisi velit magni provident ea iusto natus minima vel veritatis quaerat, corporis voluptas, reprehenderit animi Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores corporis quae maiores nihil laudantium. Odit natus fuga autem, amet quam voluptate quas ipsam veniam. A ratione porro amet possimus sit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit similique dicta aliquam ut totam ex perferendis voluptas aut est ad quo facere, repudiandae quas sint, quisquam mollitia nulla non pariatur.</p>
+            </div>
+        </section>
+        
+        <section class="como_funciona" id="como_funciona">
+            <div class="ícones">
+                <ul>
+                    <li><i class="fas fa-laptop"><p>use</p></i></li>
+                    <li><i class="fas fa-mobile-alt"><p>analise</p></i></li>
+                    <li><i class="fas fa-space-shuttle"><p>decole!</p></i></li>
+                </ul>
+            </div>
+        </section>
+        
     </section>
 
     <section class="planos" id="planos">
@@ -117,7 +126,7 @@
             </div>
         </div>
     </section>
-    <button id="topBtn"><i class="fas fa-arrow-up"></i></button>
+    <button class="topBtn"><i class="fas fa-arrow-up"></i></button>
 
     <section class="quem_somos" id="quem_somos">
         <h2>Quem somos</h2>
@@ -137,7 +146,7 @@
                 <div class="col">
                     <div class="testimonial">
                         <img src="imagens/test1.png" alt="pessoa">
-                        <div class="name">Roberto</div>
+                        <div class="name"><strong>Roberto</strong></div>
                         <div class="stars">
                             <i class="far fa fa-star"></i>
                             <i class="far fa fa-star"></i>
@@ -151,7 +160,7 @@
                 <div class="col">
                         <div class="testimonial">
                             <img src="imagens/test2.png" alt="pessoa">
-                            <div class="name">Thiago</div>
+                            <div class="name"><strong>Thiago</strong></div>
                             <div class="stars">
                                 <i class="far fa fa-star"></i>
                                 <i class="far fa fa-star"></i>
@@ -165,7 +174,7 @@
                 <div class="col">
                         <div class="testimonial">
                             <img src="imagens/test1.png" alt="pessoa">
-                            <div class="name">Betinho</div>
+                            <div class="name"><strong>Betinho</strong></div>
                             <div class="stars">
                                 <i class="far fa fa-star"></i>
                                 <i class="far fa fa-star"></i>
@@ -185,17 +194,17 @@
         <div class="contact_form_content">
             <div class="txtb">
                 <label>Nome Completo :</label>
-                <input type="text" name="" value="" placeholder="Digite seu nome">
+                <input type="text" name="" value="" placeholder="Digite seu nome" maxlength="50">
             </div>
             <div class="txtb">
                 <label>E-mail :</label>
-                <input type="email" name="" value="" placeholder="Digite seu e-mail">
+                <input type="email" name="" value="" placeholder="Digite seu e-mail" maxlength="50">
             </div>
             <div class="txtb">
                 <label> Mensagem :</label>
-                <textarea></textarea>
+                <textarea maxlength="300"></textarea>
             </div>
-            <a class="formBtn">Enviar</a>
+            <a class="formBtn"><strong>Enviar</strong> </a>
         </div>
     </section>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0656932253614!2d-46.65298398507052!3d-23.56608398468064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.+Paulista+-+Bela+Vista%2C+S%C3%A3o+Paulo+-+SP!5e0!3m2!1spt-BR!2sbr!4v1552311784381" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -226,13 +235,13 @@
 
         $(window).scroll(function(){
         if($(this).scrollTop() > 40){
-            $('#topBtn').fadeIn();
+            $('.topBtn').fadeIn();
         } else{
-            $('#topBtn').fadeOut();
+            $('.topBtn').fadeOut();
         }
         });
 
-        $("#topBtn").click(function(){
+        $(".topBtn").click(function(){
         $('html ,body').animate({scrollTop : 0},800);
         });
         });
