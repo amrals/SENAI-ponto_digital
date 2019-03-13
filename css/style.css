@@ -15,6 +15,9 @@ h2{
     padding-top: 40px;
     padding-bottom: 30px;
 }
+h1{
+    display: none;
+}
 body{
     font-family: 'Montserrat', sans-serif;
 }
@@ -36,7 +39,8 @@ body{
 .logo{
     position: fixed;
     float: left;
-    margin-left: 10%;
+    margin-left: 11%;
+    padding-top: 1px;
 }
 nav{
     position: fixed;
@@ -65,9 +69,11 @@ nav ul li a{
     text-decoration: none;
     color: #000;
     font-size: 22px;
+    padding: 5px;
 }
 nav ul li a:hover{
     color: #005eb9;
+    transition: 0.3s;
 }
 .banner{
     width: 100%;
@@ -108,11 +114,15 @@ nav ul li a:hover{
     justify-content: center;
     padding-left: 15%;
 }
+.vantagens{
+    border-radius: 50px;
+    margin-left: 7%;
+}
 .como_funciona{
     padding-right: 10%;
 }
 .funcionalidades p{
-    max-width: 500px;
+    max-width: 400px;
     margin-top: -10%;
 }
 .funcionalidades img{
@@ -132,7 +142,7 @@ nav ul li a:hover{
 .ícones ul li{
     display: inline-block;
     margin: 10px 10px;
-    font-size: 90px;
+    font-size: 50px;
     color: #005eb9;
     padding: 0 50px 0 50px;
 }
@@ -221,6 +231,56 @@ nav ul li a:hover{
     border: none;
     cursor: pointer;
     border-radius: 50%;
+    outline: none;
+}
+.cadastro{
+    padding-top: 5%;
+}
+.box_cad{
+    width: 300px;
+    padding: 40px 40px 20px 40px;
+    background: #005eb9;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 40.5%;
+    color: #fff;
+    box-shadow: 0 0 10px #000;
+}
+.box_cad input[type = "text"], .box_cad input[type = "password"], .box_cad input[type = "email"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #f4b443;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 15px;
+    transition: 0.25s;
+}
+.box_cad input[type = "submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 40px auto;
+    text-align: center;
+    border: 2px solid #fff;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 15px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-size: 15px;
+}
+.box_cad input[type = "submit"]:hover{
+    background-color: #f4b443;
+    color: #005eb9;
+}
+.box_cad input[type = "text"]:focus, .box_cad input[type = "password"]:focus, .box_cad input[type = "email"]:focus{
+    width: 240px;
 }
 .quem_somos{
     padding-top: 5%;
@@ -339,10 +399,13 @@ nav ul li a:hover{
     cursor: pointer;
     margin-top: 8px;
     width: 100%;
+    border: none;
+    border-radius: 8px;
 }
 .formBtn:hover{
     background: #fff;
     color: #005eb9;
+    box-shadow: 0 0 5px #000;
 }
 iframe{
     margin-top: 50px;
@@ -353,7 +416,7 @@ iframe{
     height: auto;
     margin: auto;
     background-color: #005eb9;
-    padding: 20px 0px;
+    padding: 20px 0px 5px 0px;
 }
 .footer_social_icons{
     width: 100%;
@@ -376,14 +439,14 @@ iframe{
 }
 .footer_social_icons ul li a{
     color: #000;
-    font-size: 25px;
+    font-size: 35px;
 }
 .footer_social_icons ul li a i{
     line-height: 50px;
 }
 .footer_social_icons ul li a:hover{
     color: #005eb9;
-    font-size: 25px;
+    font-size: 35px;
 }
 .footer_social_icons ul li:hover{
     display: inline-block;
@@ -392,6 +455,19 @@ iframe{
     margin: 0px 10px;
     border-radius: 100%;
     background: #fff;
+}
+.footer_social_icons div{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    padding-top: 20px;
+}
+.footer_social_icons div p{
+    display: inline-block;
+    width: 250px;
+    height: 50px;
+    margin: 0px 10px;
+    font-size: 20px;
 }
 @media(max-width:1127px){
     .funcionalidades p{
