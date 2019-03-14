@@ -27,6 +27,7 @@
                     <li><a href="#quem_somos" class="scrollLink">Quem Somos</a></li>
                     <!-- <li>Tel:3675-5913</li> -->
                     <li><a href="#fale_conosco" class="scrollLink">Contato</a></li>
+                    <li><a href="#" class="log">Login</a></li>
                 </ul>
             </div>
         </nav>
@@ -242,6 +243,20 @@
         </div>
     </section>
 
+    <section id="login" class="login">
+        <form action="GET">
+            <div class="close">+</div>
+            <h2>Login</h2>
+            <input type="email" placeholder="E-mail" required>
+            <input type="password" placeholder="Senha" required>
+            <a href="#">Esqueceu sua senha?</a>
+            <input type="submit" placeholder="Enviar" required>
+        </form>
+
+    </section>
+
+    
+
 
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -275,6 +290,24 @@
         $(document).ready(function(){
             $(".menu_icon").on("click", function(){
                 $("nav ul").toggleClass("showing");
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            var login = $('.login');
+            var botao = $('.log');
+            botao.on('.click', function () {
+                login.toggleClass("active");
+                login.removeClass("login");
+            });
+        });
+        $(function () {
+            var login = $('.login');
+            var botao = $('.close');
+            botao.on('.click', function () {
+                login.toggleClass("active");
+                login.removeClass("login");
             });
         });
     </script>
