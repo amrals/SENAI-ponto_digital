@@ -14,6 +14,7 @@ h2{
     text-align: center;
     padding-top: 40px;
     padding-bottom: 30px;
+    font-size: 25px;
 }
 h1{
     display: none;
@@ -123,7 +124,7 @@ nav ul li a:hover{
 }
 .funcionalidades p{
     max-width: 400px;
-    margin-top: -10%;
+    margin-top: -5%;
 }
 .funcionalidades img{
     height: 100%;
@@ -137,7 +138,7 @@ nav ul li a:hover{
     margin: 0px;
     padding: 0px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 .ícones ul li{
     display: inline-block;
@@ -233,8 +234,22 @@ nav ul li a:hover{
     border-radius: 50%;
     outline: none;
 }
-.cadastro{
+#cadastro{
     padding-top: 5%;
+}
+.cadastro{
+    padding-top: 3%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-content: center;
+}
+.cadastro img{
+    width: 30%;
+    height: 30%;
+    margin-left: 10%;
+    margin-right: -5%;
 }
 .box_cad{
     width: 300px;
@@ -242,7 +257,7 @@ nav ul li a:hover{
     background: #005eb9;
     border-radius: 10px;
     text-align: center;
-    margin-left: 40.5%;
+    /* margin-left: 40.5%; */
     color: #fff;
     box-shadow: 0 0 10px #000;
 }
@@ -281,6 +296,14 @@ nav ul li a:hover{
 }
 .box_cad input[type = "text"]:focus, .box_cad input[type = "password"]:focus, .box_cad input[type = "email"]:focus{
     width: 240px;
+}
+.box_cad a{
+    color: #fff;
+    font-size: 18px;
+}
+.box_cad a:hover{
+    color: #f4b443;
+    transition: 0.25s;
 }
 .quem_somos{
     padding-top: 5%;
@@ -362,6 +385,10 @@ nav ul li a:hover{
     box-shadow: 0 0 10px #000;
     margin-left: 30%;
     background-color: #005eb9;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
 }
 .txtb{
     border: 1px solid #fff;
