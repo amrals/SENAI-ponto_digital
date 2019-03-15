@@ -141,7 +141,7 @@
             <label for="senha">Senha :</label>
             <input type="password" name="senha" required>
             <input type="submit" name="" value="Cadastre-se">
-            <a href="#">Já tem uma conta? Faça login!</a>
+            <a href="#" class="log">Já tem uma conta? Faça login!</a>
         </form>
         <img src="imagens/mcpd.png" alt="imagem do produto">
     </section>
@@ -150,7 +150,7 @@
         <h2>Quem somos</h2>
         <div class="quem_somos_content">
             <img src="imagens/carlos.png" alt="carlos">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo reprehenderit nemo adipisci, facilis animi neque, quod cupiditate veritatis ipsam cumque deserunt deleniti velit amet non commodi, ad soluta? Magnam, autem? </p>
+            <p>Somos a empresa Agora Vai Automação em Gestão de Projetos, do ramo de desenvolvimento de sistemas voltados para gerência de projetos presenciais ou à distância</p>
             <img src="imagens/cesar.png" alt="cesar">
         </div>
     </section>
@@ -243,15 +243,17 @@
         </div>
     </section>
 
-    <section id="login" class="login">
-        <form action="GET">
-            <div class="close">+</div>
-            <h2>Login</h2>
-            <input type="email" placeholder="E-mail" required>
-            <input type="password" placeholder="Senha" required>
-            <a href="#">Esqueceu sua senha?</a>
-            <input type="submit" placeholder="Enviar" required>
-        </form>
+    <section id="login" class="logine x">
+        <div class="login">
+            <form action="GET">
+                <div class="close">+</div>
+                <h2>Login</h2>
+                <input type="email" placeholder="E-mail" required>
+                <input type="password" placeholder="Senha" required>
+                <a href="#">Esqueceu sua senha?</a>
+                <input type="submit" placeholder="Enviar" required>
+            </form>
+        </div>
 
     </section>
 
@@ -295,17 +297,17 @@
     </script>
     <script>
         $(function () {
-            var login = $('.login');
+            var login = $('.logine');
             var botao = $('.log');
-            botao.on('.click', function () {
+            botao.on('click', function () {
                 login.toggleClass("active");
                 login.removeClass("login");
             });
         });
         $(function () {
-            var login = $('.login');
+            var login = $('.logine');
             var botao = $('.close');
-            botao.on('.click', function () {
+            botao.on('click', function () {
                 login.toggleClass("active");
                 login.removeClass("login");
             });
